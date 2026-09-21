@@ -25,6 +25,13 @@ const PRODUCTS = [
     privacy: 'https://vectorsevengame.github.io/bortu-privacy/privacy.html',
     platforms: ['Android', 'iOS'],
   },
+  {
+    slug: 'afterself',
+    kind: 'game',
+    icon: 'assets/img/afterself-icon.png',
+    shots: ['assets/img/afterself-oyun.png', 'assets/img/afterself-menu.png'],
+    platforms: ['Android'],
+  },
 ];
 
 const TEXT = {
@@ -46,6 +53,7 @@ const TEXT = {
     games: {
       eyebrow: 'Oyunlar',
       title: 'Oyunlarımız yolda',
+      titleHas: 'Oyunlarımız',
       soonTitle: 'İlk oyunumuz geliştiriliyor',
       soonText: 'Duyurulardan ilk sen haberdar olmak istersen bize bir e-posta bırak.',
       soonCta: 'Haberdar et',
@@ -105,6 +113,35 @@ const TEXT = {
         privacy: 'Gizlilik politikası',
         back: '← Tüm ürünler',
       },
+      afterself: {
+        name: 'Afterself',
+        tagline: 'Rakibin, geçmiş sensin',
+        short: 'Parmağınla kaç, veri topla, hayatta kal. Her turun sonunda o turda yaptığın hareket bir hayalete dönüşüp peşine düşüyor.',
+        tags: ['Arcade', 'Refleks'],
+        status: 'soon',
+        lead: 'Sekiz saniyelik turlar. Tur bitince o turdaki hareketin kaydediliyor ve bir hayalet olarak sahaya geri dönüp aynısını tekrar ediyor. Sonraki tur bir hayalet daha ekleniyor. Yani oyunun zorluğunu tasarımcı değil, sen belirliyorsun: nereye gidersen, gelecekte orası tehlikeli.',
+        join: 'Testçi olmak istiyorum',
+        joinSubject: 'Afterself test katılım',
+        playSoon: 'Google Play · yakında',
+        figures: [
+          ['8', 'saniyelik turlar'],
+          ['12', 'hayalete kadar'],
+          ['6', 'görünüm'],
+          ['3', 'dil: TR, EN, DE'],
+        ],
+        featuresTitle: 'Nasıl oynanır?',
+        features: [
+          ['👆', 'Tek parmak', 'Ekranda parmağını sürükle, karakterin peşinden gelsin. Buton yok, öğrenmesi beş saniye.'],
+          ['👻', 'Hayaletler sensin', 'Her turun sonunda o turdaki hareketin birebir tekrar eden bir hayalete dönüşüyor. Değersen ölüyorsun.'],
+          ['💠', 'Topla ve sil', 'Topladığın veriler etrafındaki halkayı doldurur. Halka dolunca en eski hayalet yok olur.'],
+          ['📈', 'Artan bedel', 'Her silme bir sonrakini pahalılaştırır. Ne zaman harcayacağın, oyunun asıl kararı.'],
+          ['🎨', 'Görünümler', 'Kazandığın verilerle yeni renkler aç.'],
+          ['📱', 'Çevrimdışı', 'Hesap yok, internet zorunluluğu yok. Aç ve oyna.'],
+        ],
+        support: 'Destek ve geri bildirim',
+        privacy: 'Gizlilik politikası',
+        back: '← Tüm ürünler',
+      },
     },
     mail: { copy: 'Adresi kopyala', copied: 'Kopyalandı ✓', open: 'E-posta uygulamasında aç', hint: 'Bu adrese yazman yeterli, en kısa sürede dönüyoruz.' },
     notFound: { title: 'Sayfa bulunamadı', text: 'Aradığın sayfa taşınmış ya da hiç var olmamış olabilir.', home: 'Ana sayfaya dön' },
@@ -128,6 +165,7 @@ const TEXT = {
     games: {
       eyebrow: 'Games',
       title: 'Our games are on the way',
+      titleHas: 'Our games',
       soonTitle: 'Our first game is in development',
       soonText: 'Want to hear about it first? Drop us an email.',
       soonCta: 'Notify me',
@@ -187,6 +225,35 @@ const TEXT = {
         privacy: 'Privacy policy',
         back: '← All products',
       },
+      afterself: {
+        name: 'Afterself',
+        tagline: 'Your rival is your past self',
+        short: 'Drag to run, collect data, stay alive. At the end of every round your own movement becomes a ghost and comes after you.',
+        tags: ['Arcade', 'Reflex'],
+        status: 'soon',
+        lead: 'Eight-second rounds. When a round ends, the way you moved through it is recorded and sent back onto the field as a ghost that repeats it exactly. The next round adds another one. The difficulty is not designed — you write it yourself: wherever you go now is dangerous later.',
+        join: 'I want to test it',
+        joinSubject: 'Afterself testing',
+        playSoon: 'Google Play · soon',
+        figures: [
+          ['8', 'second rounds'],
+          ['12', 'ghosts max'],
+          ['6', 'skins'],
+          ['3', 'languages'],
+        ],
+        featuresTitle: 'How it plays',
+        features: [
+          ['👆', 'One finger', 'Drag anywhere and the ball follows. No buttons, five seconds to learn.'],
+          ['👻', 'The ghosts are you', 'Each round your movement becomes a ghost that repeats it frame for frame. Touch one and the run is over.'],
+          ['💠', 'Collect and wipe', 'Collected data fills the ring around you. A full ring destroys the oldest ghost.'],
+          ['📈', 'Rising cost', 'Every wipe makes the next one more expensive. When to spend it is the real decision.'],
+          ['🎨', 'Skins', 'Spend what you collect on new colours.'],
+          ['📱', 'Offline', 'No account, no connection needed. Open and play.'],
+        ],
+        support: 'Support and feedback',
+        privacy: 'Privacy policy',
+        back: '← All products',
+      },
     },
     mail: { copy: 'Copy address', copied: 'Copied ✓', open: 'Open in email app', hint: 'Just write to this address, we will get back to you soon.' },
     notFound: { title: 'Page not found', text: 'The page you are looking for may have moved or never existed.', home: 'Back to home' },
@@ -210,6 +277,7 @@ const TEXT = {
     games: {
       eyebrow: 'Spiele',
       title: 'Unsere Spiele sind unterwegs',
+      titleHas: 'Unsere Spiele',
       soonTitle: 'Unser erstes Spiel ist in Entwicklung',
       soonText: 'Du willst als Erstes davon erfahren? Schreib uns eine E-Mail.',
       soonCta: 'Benachrichtigen',
@@ -267,6 +335,35 @@ const TEXT = {
         ],
         support: 'Support & Feedback',
         privacy: 'Datenschutzerklärung',
+        back: '← Alle Produkte',
+      },
+      afterself: {
+        name: 'Afterself',
+        tagline: 'Dein Gegner ist dein früheres Ich',
+        short: 'Zieh, sammle Daten, überlebe. Am Ende jeder Runde wird deine eigene Bewegung zu einem Geist und verfolgt dich.',
+        tags: ['Arcade', 'Reflexe'],
+        status: 'soon',
+        lead: 'Runden von acht Sekunden. Endet eine Runde, wird deine Bewegung aufgezeichnet und als Geist zurück ins Spiel geschickt, der sie exakt wiederholt. Die nächste Runde bringt einen weiteren. Den Schwierigkeitsgrad entwirft kein Designer — du schreibst ihn selbst: Wohin du jetzt gehst, wird später gefährlich.',
+        join: 'Ich möchte testen',
+        joinSubject: 'Afterself Test',
+        playSoon: 'Google Play · bald',
+        figures: [
+          ['8', 'Sekunden pro Runde'],
+          ['12', 'Geister maximal'],
+          ['6', 'Skins'],
+          ['3', 'Sprachen'],
+        ],
+        featuresTitle: 'So spielt es sich',
+        features: [
+          ['👆', 'Ein Finger', 'Zieh über den Bildschirm, der Ball folgt. Keine Knöpfe, in fünf Sekunden verstanden.'],
+          ['👻', 'Die Geister bist du', 'Jede Runde wird deine Bewegung zu einem Geist, der sie Bild für Bild wiederholt. Eine Berührung beendet den Lauf.'],
+          ['💠', 'Sammeln und löschen', 'Gesammelte Daten füllen den Ring um dich. Ein voller Ring zerstört den ältesten Geist.'],
+          ['📈', 'Steigende Kosten', 'Jede Löschung macht die nächste teurer. Wann du sie einsetzt, ist die eigentliche Entscheidung.'],
+          ['🎨', 'Skins', 'Gib das Gesammelte für neue Farben aus.'],
+          ['📱', 'Offline', 'Kein Konto, keine Verbindung nötig. Öffnen und spielen.'],
+        ],
+        support: 'Support und Feedback',
+        privacy: 'Datenschutz',
         back: '← Alle Produkte',
       },
     },
@@ -410,11 +507,17 @@ function homePage(lang) {
         <strong>${bortu.name}</strong>
         <span>${bortu.tagline}</span>
       </a>
-      <div class="stack-card game">
+      ${games.length
+        ? `<a class="stack-card game" href="${root}${PREFIX[lang]}games/${games[0].slug}/" tabindex="-1">
+        <img src="${root}${games[0].icon}" alt="" width="240" height="240" style="border-radius:28px">
+        <strong>${t.products[games[0].slug].name}</strong>
+        <span>${t.products[games[0].slug].tagline}</span>
+      </a>`
+        : `<div class="stack-card game">
         <div class="glyph">V7</div>
         <strong>${t.hero.stackGame}</strong>
         <span>${t.hero.stackGameSub}</span>
-      </div>
+      </div>`}
     </div>
   </div>
 </section>
@@ -432,17 +535,17 @@ function homePage(lang) {
 <section class="section" id="games">
   <div class="wrap">
     <div class="section-head reveal">
-      <div><p class="eyebrow">${t.games.eyebrow}</p><h2>${t.games.title}</h2></div>
+      <div><p class="eyebrow">${t.games.eyebrow}</p><h2>${games.length ? t.games.titleHas : t.games.title}</h2></div>
       ${games.length ? `<span class="count">${t.count(games.length)}</span>` : ''}
     </div>
     <div class="cards">
       ${games.map((p) => productCard(lang, p, root)).join('')}
-      <div class="card soon reveal" style="--d:.1s">
+      ${games.length ? '' : `<div class="card soon reveal" style="--d:.1s">
         <div class="glyph">+</div>
         <h3>${t.games.soonTitle}</h3>
         <p>${t.games.soonText}</p>
         <div>${mailButton(lang, t.games.soonCta, `${SITE.name} – ${t.games.soonCta}`)}</div>
-      </div>
+      </div>`}
     </div>
   </div>
 </section>
@@ -510,10 +613,12 @@ function productPage(lang, p) {
       <div class="btns" style="margin-top:28px">
         ${mailButton(lang, c.join, c.joinSubject, 'btn btn-primary')}
         <span class="btn btn-ghost" aria-disabled="true">${c.playSoon}</span>
-        <span class="btn btn-ghost" aria-disabled="true">${c.iosSoon}</span>
+        ${c.iosSoon ? `<span class="btn btn-ghost" aria-disabled="true">${c.iosSoon}</span>` : ''}
       </div>
     </div>
-    <img class="mascot" src="${root}assets/img/bortu-selam.png" alt="${esc(c.mascotTitle)}" width="380" height="380">
+    ${p.shots
+      ? `<img class="mascot" src="${root}${p.shots[0]}" alt="${esc(c.name)}" width="300" height="533" style="border-radius:22px">`
+      : `<img class="mascot" src="${root}assets/img/bortu-selam.png" alt="${esc(c.mascotTitle)}" width="380" height="380">`}
   </div>
 </section>
 
@@ -542,7 +647,7 @@ function productPage(lang, p) {
   </div>
 </section>
 
-<section class="section">
+${c.mascotTitle ? `<section class="section">
   <div class="wrap split reveal">
     <img src="${root}assets/img/bortu-anlatiyor.png" alt="" width="320" height="320">
     <div>
@@ -561,14 +666,20 @@ function productPage(lang, p) {
       </div>
     </div>
   </div>
-</section>
+</section>` : ''}
+
+${p.shots && p.shots.length > 1 ? `<section class="section">
+  <div class="wrap reveal" style="display:flex;gap:22px;flex-wrap:wrap;justify-content:center">
+    ${p.shots.map((s) => `<img src="${root}${s}" alt="" width="260" height="462" style="border-radius:20px;max-width:46%;height:auto">`).join('')}
+  </div>
+</section>` : ''}
 
 <section class="section">
   <div class="wrap contact">
     <div>
       <p class="eyebrow">${c.support}</p>
       <p style="margin-top:12px"><a class="mail" href="mailto:${SITE.email}">${SITE.email}</a></p>
-      <p style="margin-top:18px"><a href="${p.privacy}">${c.privacy} ↗</a></p>
+      ${p.privacy ? `<p style="margin-top:18px"><a href="${p.privacy}">${c.privacy} ↗</a></p>` : ''}
     </div>
   </div>
 </section>`;
