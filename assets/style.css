@@ -294,6 +294,61 @@ p {
   border-width: 2px;
   background: var(--paper);
 }
+/* Gerçek oyun kartı: oyunun kendi diliyle, neon ızgara üstünde */
+.stack-card.game.live {
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(58, 245, 255, 0.45);
+  background:
+    linear-gradient(180deg, rgba(58, 245, 255, 0.07), rgba(255, 34, 115, 0.05)),
+    repeating-linear-gradient(0deg, transparent 0 27px, rgba(120, 60, 255, 0.22) 27px 28px),
+    repeating-linear-gradient(90deg, transparent 0 27px, rgba(120, 60, 255, 0.22) 27px 28px),
+    #07060f;
+  box-shadow: 0 0 0 1px rgba(58, 245, 255, 0.12), 0 18px 50px rgba(58, 245, 255, 0.16),
+    0 0 60px rgba(255, 34, 115, 0.1) inset;
+  color: #eaf7ff;
+}
+.stack-card.game.live img {
+  width: 72%;
+  margin: 0 auto 10px;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 0 28px rgba(58, 245, 255, 0.25);
+}
+.stack-card.game.live strong {
+  font-family: var(--display);
+  font-size: 24px;
+  letter-spacing: 0.06em;
+  color: #eaf7ff;
+  text-shadow: 0 0 18px rgba(58, 245, 255, 0.55);
+}
+.stack-card.game.live span {
+  color: rgba(234, 247, 255, 0.72);
+  letter-spacing: 0.02em;
+}
+/* Tarama çizgisi: kartın üstünden yavaşça geçiyor */
+.stack-card.game.live::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(180deg, transparent 0%, rgba(58, 245, 255, 0.16) 48%, transparent 60%);
+  transform: translateY(-100%);
+  animation: v7-scan 4.5s linear infinite;
+}
+@keyframes v7-scan {
+  to {
+    transform: translateY(100%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .stack-card.game.live::after {
+    animation: none;
+    opacity: 0.35;
+    transform: none;
+  }
+}
 .stack-card.game .glyph {
   font-family: var(--display);
   font-weight: 800;

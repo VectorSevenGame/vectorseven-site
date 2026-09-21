@@ -30,7 +30,7 @@ const PRODUCTS = [
     kind: 'game',
     icon: 'assets/img/afterself-icon.png',
     shots: ['assets/img/afterself-oyun.png', 'assets/img/afterself-menu.png'],
-    platforms: ['Android'],
+    platforms: ['Android', 'iOS'],
   },
 ];
 
@@ -123,6 +123,7 @@ const TEXT = {
         join: 'Testçi olmak istiyorum',
         joinSubject: 'Afterself test katılım',
         playSoon: 'Google Play · yakında',
+        iosSoon: 'App Store · yakında',
         figures: [
           ['8', 'saniyelik turlar'],
           ['12', 'hayalete kadar'],
@@ -235,6 +236,7 @@ const TEXT = {
         join: 'I want to test it',
         joinSubject: 'Afterself testing',
         playSoon: 'Google Play · soon',
+        iosSoon: 'App Store · soon',
         figures: [
           ['8', 'second rounds'],
           ['12', 'ghosts max'],
@@ -347,6 +349,7 @@ const TEXT = {
         join: 'Ich möchte testen',
         joinSubject: 'Afterself Test',
         playSoon: 'Google Play · bald',
+        iosSoon: 'App Store · bald',
         figures: [
           ['8', 'Sekunden pro Runde'],
           ['12', 'Geister maximal'],
@@ -508,7 +511,7 @@ function homePage(lang) {
         <span>${bortu.tagline}</span>
       </a>
       ${games.length
-        ? `<a class="stack-card game" href="${root}${PREFIX[lang]}games/${games[0].slug}/" tabindex="-1">
+        ? `<a class="stack-card game live" href="${root}${PREFIX[lang]}games/${games[0].slug}/" tabindex="-1">
         <img src="${root}${games[0].icon}" alt="" width="240" height="240" style="border-radius:28px">
         <strong>${t.products[games[0].slug].name}</strong>
         <span>${t.products[games[0].slug].tagline}</span>
