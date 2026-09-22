@@ -30,6 +30,7 @@ const PRODUCTS = [
     kind: 'game',
     icon: 'assets/img/afterself-icon.png',
     shots: ['assets/img/afterself-oyun.png', 'assets/img/afterself-menu.png'],
+    privacy: 'https://vectorseven.com.tr/games/afterself/privacy/',
     platforms: ['Android', 'iOS'],
   },
 ];
