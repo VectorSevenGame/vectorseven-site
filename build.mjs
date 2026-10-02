@@ -701,6 +701,149 @@ ${p.shots && p.shots.length > 1 ? `<section class="section">
   };
 }
 
+// --------------------------------------------------------------------- destek
+
+/** Destek sayfası: App Store ve Play "Support URL" alanı buraya bakar. */
+const SUPPORT = {
+  tr: {
+    slug: 'destek/',
+    title: 'Destek',
+    eyebrow: 'Yardım',
+    lead: 'Bir sorun mu yaşıyorsun, yanlış bir şey mi gördün? Doğrudan bize yaz; genellikle 2 iş günü içinde dönüyoruz.',
+    writeUs: 'Bize e-posta gönder',
+    subject: 'Destek talebi',
+    inAppTitle: 'Uygulamanın içinden bildir',
+    inApp: 'Börtü’de bir soruda yanlış ya da eksik bilgi gördüğünde, sorunun altındaki “Bu soruda hata var mı?” bağlantısına dokun. Bildirim doğrudan bize ulaşır ve içeriği düzeltiriz.',
+    faqTitle: 'Sık sorulanlar',
+    faq: [
+      ['İlerlemem kayboldu, geri gelir mi?',
+       'Börtü hesap istemez; bütün ilerleme yalnızca cihazında tutulur. Uygulamayı silersen ya da cihaz değiştirirsen ilerleme geri getirilemez. Bulut yedekleme üzerinde çalışıyoruz.'],
+      ['Canlarım bitti, ne yapabilirim?',
+       'Canlar zamanla kendiliğinden dolar. Beklemek istemezsen isteğe bağlı bir ödüllü reklam izleyerek ya da bekleyen tekrar kartlarını çalışarak can kazanabilirsin.'],
+      ['Verilerimi nasıl silerim?',
+       'Ayarlar > Tüm verileri sil. Bu işlem cihazındaki bütün ilerlemeyi kalıcı olarak siler. Haftalık lige katıldıysan kaydın, ligden ayrıldığında sunucudan da silinir.'],
+      ['Bir derste yanlış bilgi var.',
+       'Lütfen bildir. İçerik kaynaklardan doğrulanarak yazıldı ama hata olabilir; bildirilen her maddeyi tek tek kontrol ediyoruz.'],
+      ['Reklamlar neden çıkıyor?',
+       'Börtü ücretsiz ve reklam destekli. Ödüllü reklamlar tamamen isteğe bağlı; hiçbirini izlemeden de bütün dersleri çalışabilirsin.'],
+    ],
+    privacyTitle: 'Gizlilik',
+    privacy: 'Hangi verinin tutulduğunu ve neden tutulduğunu gizlilik politikasında ayrıntısıyla anlattık.',
+    privacyLink: 'Gizlilik politikası',
+    apps: 'Bu sayfa Vector Seven’in bütün uygulama ve oyunları için geçerlidir.',
+  },
+  en: {
+    slug: 'en/support/',
+    title: 'Support',
+    eyebrow: 'Help',
+    lead: 'Having trouble, or found something wrong? Write to us directly — we usually reply within 2 business days.',
+    writeUs: 'Send us an email',
+    subject: 'Support request',
+    inAppTitle: 'Report from inside the app',
+    inApp: 'If you see wrong or missing information in a Börtü question, tap the “Is something wrong with this question?” link below it. The report reaches us directly and we correct the content.',
+    faqTitle: 'Frequently asked',
+    faq: [
+      ['I lost my progress — can it be restored?',
+       'Börtü needs no account; all progress is kept on your device only. If you delete the app or switch devices, progress cannot be restored. Cloud backup is in the works.'],
+      ['I ran out of hearts — what can I do?',
+       'Hearts refill on their own over time. If you would rather not wait, you can earn one by watching an optional rewarded ad or by practising your due review cards.'],
+      ['How do I delete my data?',
+       'Settings > Delete all data. This permanently removes all progress from your device. If you joined the weekly league, your record is deleted from the server when you leave the league.'],
+      ['A lesson contains incorrect information.',
+       'Please report it. The content was written against sources, but mistakes are possible and we check every report individually.'],
+      ['Why do I see ads?',
+       'Börtü is free and ad supported. Rewarded ads are entirely optional — every lesson works without watching any.'],
+    ],
+    privacyTitle: 'Privacy',
+    privacy: 'The privacy policy explains in detail what data is kept and why.',
+    privacyLink: 'Privacy policy',
+    apps: 'This page covers all Vector Seven apps and games.',
+  },
+  de: {
+    slug: 'de/support/',
+    title: 'Support',
+    eyebrow: 'Hilfe',
+    lead: 'Probleme oder etwas entdeckt, das nicht stimmt? Schreib uns direkt — wir antworten meist innerhalb von 2 Werktagen.',
+    writeUs: 'Schreib uns eine E-Mail',
+    subject: 'Supportanfrage',
+    inAppTitle: 'Direkt aus der App melden',
+    inApp: 'Wenn du in einer Börtü-Aufgabe eine falsche oder fehlende Angabe siehst, tippe darunter auf „Stimmt mit dieser Frage etwas nicht?“. Die Meldung erreicht uns direkt und wir korrigieren den Inhalt.',
+    faqTitle: 'Häufige Fragen',
+    faq: [
+      ['Mein Fortschritt ist weg — kommt er zurück?',
+       'Börtü braucht kein Konto; der gesamte Fortschritt liegt ausschließlich auf deinem Gerät. Wenn du die App löschst oder das Gerät wechselst, lässt er sich nicht wiederherstellen. An einer Cloud-Sicherung arbeiten wir.'],
+      ['Meine Herzen sind leer — was kann ich tun?',
+       'Herzen füllen sich mit der Zeit von selbst wieder auf. Wenn du nicht warten möchtest, kannst du eines durch eine freiwillige Belohnungsanzeige oder durch das Üben fälliger Wiederholungskarten verdienen.'],
+      ['Wie lösche ich meine Daten?',
+       'Einstellungen > Alle Daten löschen. Damit wird der gesamte Fortschritt dauerhaft von deinem Gerät entfernt. Wenn du an der Wochenliga teilgenommen hast, wird dein Eintrag beim Verlassen der Liga auch vom Server gelöscht.'],
+      ['In einer Lektion steht etwas Falsches.',
+       'Bitte melde es. Die Inhalte wurden anhand von Quellen geschrieben, Fehler sind aber möglich — wir prüfen jede Meldung einzeln.'],
+      ['Warum sehe ich Werbung?',
+       'Börtü ist kostenlos und werbefinanziert. Belohnungsanzeigen sind völlig freiwillig — jede Lektion funktioniert auch ohne.'],
+    ],
+    privacyTitle: 'Datenschutz',
+    privacy: 'Die Datenschutzerklärung erklärt im Detail, welche Daten gespeichert werden und warum.',
+    privacyLink: 'Datenschutzerklärung',
+    apps: 'Diese Seite gilt für alle Apps und Spiele von Vector Seven.',
+  },
+};
+
+const PRIVACY_URL = 'https://vectorsevengame.github.io/bortu-privacy/privacy.html';
+
+function supportPage(lang) {
+  const s = SUPPORT[lang];
+  const path = `${s.slug}index.html`;
+  const root = rootOf(path);
+
+  const body = `
+<section class="section">
+  <div class="wrap">
+    <p class="eyebrow">${s.eyebrow}</p>
+    <h1 style="font-size:clamp(34px,5vw,52px);margin:10px 0 16px">${s.title}</h1>
+    <p class="lead" style="max-width:60ch">${s.lead}</p>
+    <div class="btns" style="margin-top:28px">
+      ${mailButton(lang, s.writeUs, s.subject, 'btn btn-primary')}
+    </div>
+
+    <h2 style="font-size:clamp(22px,2.6vw,28px);margin:48px 0 10px">${s.inAppTitle}</h2>
+    <p class="lead" style="max-width:60ch">${s.inApp}</p>
+
+    <h2 style="font-size:clamp(22px,2.6vw,28px);margin:48px 0 10px">${s.faqTitle}</h2>
+    <div style="max-width:70ch">
+      ${s.faq
+        .map(
+          ([q, a]) => `<details style="border-top:1px solid rgba(128,128,128,.28);padding:16px 0">
+        <summary style="cursor:pointer;font-weight:700;font-size:17px">${esc(q)}</summary>
+        <p class="lead" style="margin:10px 0 0">${esc(a)}</p>
+      </details>`,
+        )
+        .join('')}
+    </div>
+
+    <h2 style="font-size:clamp(22px,2.6vw,28px);margin:48px 0 10px">${s.privacyTitle}</h2>
+    <p class="lead" style="max-width:60ch">${s.privacy}</p>
+    <div class="btns" style="margin-top:18px">
+      <a class="btn btn-ghost" href="${PRIVACY_URL}">${s.privacyLink}</a>
+    </div>
+
+    <p class="lead" style="margin-top:48px;opacity:.75">${s.apps}</p>
+    <p class="lead" style="margin-top:6px"><a href="${root}${PREFIX[lang]}">${SITE.name}</a></p>
+  </div>
+</section>`;
+
+  return {
+    path,
+    html: layout({
+      lang,
+      path,
+      title: `${s.title} \u00b7 ${SITE.name}`,
+      desc: s.lead,
+      body,
+      alt: (l) => SUPPORT[l].slug,
+    }),
+  };
+}
+
 function notFoundPage() {
   const t = TEXT.tr;
   const e = TEXT.en;
@@ -724,6 +867,7 @@ const pages = [];
 for (const lang of LANGS) {
   pages.push(homePage(lang));
   for (const p of PRODUCTS) pages.push(productPage(lang, p));
+  pages.push(supportPage(lang));
 }
 pages.push(notFoundPage());
 
